@@ -3,5 +3,5 @@ branchName: |
   {{#is_fix_pr}}fix{{/is_fix_pr}}{{#is_upgrade_pr}}upgrade{{/is_upgrade_pr}}{{#is_backlog_pr}}backlog{{/is_backlog_pr}}/{{ issue_count }}-issues
 commitMessage: "{{#is_fix_pr}}fix{{/is_fix_pr}}{{#is_upgrade_pr}}upgrade{{/is_upgrade_pr}}{{#is_backlog_pr}}backlog{{/is_backlog_pr}}: {{ issue_count }} Snyk issues"
 description: |
-  {{ jira_ids }}
+  {{ jira_ids }}<br/>
   {{#is_fix_pr}}Fixes{{/is_fix_pr}}{{#is_upgrade_pr}}Upgrades{{/is_upgrade_pr}}{{#is_backlog_pr}}Backlog{{/is_backlog_pr}} {{ issue_count }} issues
